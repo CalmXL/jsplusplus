@@ -1,0 +1,7 @@
+<div class="recom-course-board">
+  <% for (var i = 0; i < recomCourse.length; i ++) {
+    var item = recomCourse[i];
+  %>
+    <%- include('item.ejs', { item }) %>
+  <% } %>
+</div>

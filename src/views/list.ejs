@@ -1,0 +1,22 @@
+<%- include('layout/head.ejs', { PAGE_CONF }) %>
+
+<div class="container">
+  <%- include('templates/common/header/index.ejs', {
+    navData
+  })%>
+
+  <%- include('templates/list/nav/index.ejs', {
+    courseTabData
+  }) %>
+
+  <%- include('templates/list/courseList/index.ejs', {
+    courseData
+  })%>
+  
+  <%- include('datas/courseData.ejs', {
+    courseDataStr
+  }) %>
+
+</div>
+
+<%- include('layout/foot.ejs', { PAGE_CONF }) %>

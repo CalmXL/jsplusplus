@@ -1,0 +1,15 @@
+<div class="course-board">
+  <div class="course-list J_courseList clearfix">
+    <% if (!courseData || courseData.length === 0) { %>
+      <%- include('../noDataTip/index.ejs') %>
+    <% } else { %>
+      <% for (var i = 0; i < courseData.length; i ++) {
+        var item = courseData[i];
+      %>
+        <%- include('../../common/courseItem/index.ejs', {
+          item
+        }) %>
+      <% } %>
+    <% } %>
+  </div>
+</div>
